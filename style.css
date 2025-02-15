@@ -1,0 +1,602 @@
+/* Global Styles */
+body {
+    font-family: 'VanCondensed', sans-serif; /* Use Van Condensed font */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light grey text for readability */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'VanCondensed', sans-serif; /* Use Van Condensed font */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #0a0a0a, #00b8ff); /* Dark background to Electric Blue gradient */
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); /* Dark overlay */
+    border-bottom: 8px solid #ffffff; /* Subtle separation */
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #ffffff; /* White text for the main heading */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow to make the text pop */
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #b0c4de; /* Light steel blue for subheading for a soft look */
+}
+
+/* Education Section */
+#education {
+    margin: 80px 20px;
+    padding: 40px;
+    background-color: #333; /* Dark background for sections */
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: #e0e0e0; /* Slightly off-white color for the text inside sections */
+}
+
+#education h2 {
+    font-size: 2.5em;
+    color: #00b8ff; /* Electric Blue accent for headings */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* 3D effect */
+}
+
+.education-info {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.education-info span {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Sections Styling */
+section {
+    margin: 80px 20px;
+    padding: 40px;
+    background-color: #333; /* Dark background for sections */
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: #e0e0e0; /* Slightly off-white color for the text inside sections */
+}
+
+section:hover {
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+    transform: translateY(-5px); /* 3D hover effect */
+}
+
+#about, #projects, #contact {
+    background-color: #333;
+}
+
+#about h2, #projects h2, #contact h2 {
+    font-size: 2em;
+    color: #00b8ff; /* Electric Blue accent for headings */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* 3D effect */
+}
+
+/* Project List Styling */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects ul li {
+    background-color: #444; /* Dark Grey */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #f0f0f0; /* Light grey for list items */
+}
+
+#projects ul li:hover {
+    background-color: #0077cc; /* Electric Blue on hover */
+    transform: translateY(-8px); /* Elevates list item on hover */
+}
+
+#projects ul li h3 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#projects ul li p {
+    color: #b0c4de; /* Light Steel Blue for project descriptions */
+    font-size: 1.1em;
+}
+
+/* Links Styling */
+a {
+    color: #00b8ff; /* Electric Blue links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0077cc; /* Slightly darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+    background-color: #00b8ff; /* Electric Blue */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #007bff; /* Darker blue on hover */
+    transform: translateY(-3px); /* 3D button hover effect */
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a; /* Dark Charcoal */
+    color: #dcdcdc; /* Light grey for footer text */
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Photo Animation */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  /* Circular Image */
+    object-fit: cover;  /* Ensures the image doesn't stretch */
+    border: 4px solid rgba(255, 255, 255, 0.2); /* Subtle border for profile photo */
+    margin-bottom: 20px;
+    opacity: 0;  /* Initially invisible */
+    animation: fadeInZoom 1.5s ease-out forwards; /* Apply animation */
+}
+
+/* Animation for Image on Load */
+@keyframes fadeInZoom {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 100px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    #about h2, #projects h2, #contact h2 {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 80px 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    ul li {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed in place */
+    z-index: 1000; /* On top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for modal */
+    overflow: auto; /* Enable scrolling if needed */
+    padding-top: 60px; /* Position the modal content */
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%; /* Maximum size for the image */
+    max-height: 80%;
+    border: 5px solid #fff; /* White border for the image */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff6347; /* Hover color for close button */
+}
+
+/* Add some responsive design to ensure the modal looks good on small screens */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+    }
+}
+
+@font-face {
+    font-family: 'VanCondensed';
+    src: url('path/to/van-condensed.woff') format('woff');
+}
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #222;
+    color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Heading Styles */
+#contact h2 {
+    font-size: 2.5em;
+    color: #00b8ff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #c0c0c0;
+}
+
+/* Contact Icons Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+/* Individual Contact Icon */
+.contact-item {
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    border-radius: 10px;
+    padding: 20px;
+    background: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px); /* Raised effect */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Icon Style */
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Contact Text Style */
+.contact-text {
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover .contact-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Details */
+.contact-details {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+/* Animation for Fade In Effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+}
+/* Contact Section */
+#contact {
+  text-align: center;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  color: #e0e0e0;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  color: #00b8ff;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  color: #b0c4de;
+  margin-bottom: 30px;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 120px; /* Fixed width for consistency */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px); /* 3D hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 60px;  /* Set a specific size for icons */
+  height: 60px;
+  object-fit: contain;  /* Ensures that the image doesn't stretch */
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100px; /* Adjust for smaller screen */
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #contact h2 {
+    font-size: 2em;
+  }
+
+  #contact p {
+    font-size: 1em;
+  }
+}
+/* Contact Section */
+#contact {
+  text-align: center;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  color: #e0e0e0;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  color: #00b8ff;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  color: #b0c4de;
+  margin-bottom: 30px;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 120px; /* Fixed width for consistency */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px); /* 3D hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 60px;  /* Set a specific size for icons */
+  height: 60px;
+  object-fit: contain;  /* Ensures that the image doesn't stretch */
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100px; /* Adjust for smaller screen */
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #contact h2 {
+    font-size: 2em;
+  }
+
+  #contact p {
+    font-size: 1em;
+  }
+}
+.contact-icon {
+    width: 40px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    display: inline-block;
+    margin: 10px;
+}
+
